@@ -1,0 +1,5 @@
+create_book_sql = '''INSERT INTO book (book_id, title) VALUES (?,?)'''
+select_max_book_id_sql = '''SELECT MAX(book_id) FROM book;'''
+select_book_by_book_id_sql = '''SELECT * FROM book WHERE book_id = ?'''
+select_books_sql = '''SELECT * FROM book'''
+update_book_sql = '''UPDATE book SET title = ? WHERE book_id = ?'''
